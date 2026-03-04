@@ -19,6 +19,6 @@ public:
 int main()
 {
     Solution s;
-    (s.isPalindrome(123))?cout<<"true":cout<<"false";
+    (s.isPalindrome(121))?cout<<"true":cout<<"false";
     return 0;
 }
