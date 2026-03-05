@@ -6,15 +6,15 @@ class Solution
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
         vector<int> ans(nums.size());
-        for(int i=0,product=1;i<nums.size();i++)
+        for(int i=0,left=1;i<nums.size();i++)
         {
-            ans[i]=product;
-            product*=nums[i];
+            ans[i]=left;
+            left*=nums[i];
         }
-        for(int i=nums.size()-1,product=1;i>=0;i--)
+        for(int i=nums.size()-1,right=1;i>=0;i--)
         {
-            ans[i]*=product;
-            product*=nums[i];
+            ans[i]*=right;
+            right*=nums[i];
         }
         return ans;
     }
