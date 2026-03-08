@@ -36,8 +36,6 @@ public:
 int main()
 {
     Solution s;
-    int test[]={43261596,2147483644};
-    for(int i=0;i<sizeof(test)/sizeof(test[0]);i++)
-        cout<<s.reverseBits(test[i])<<'\n';
+    cout<<s.reverseBits(43261596)<<'\n';
     return 0;
 }
